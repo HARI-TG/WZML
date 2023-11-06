@@ -3,9 +3,9 @@ class WZMLStyle:
     # ----------------------
     # async def start(client, message) ---> __main__.py
     ST_BN1_NAME = 'Repo'
-    ST_BN1_URL = 'https://www.github.com/BalaPriyanB/Copy-Master'
+    ST_BN1_URL = 'https://github.com/weebzone/WZML-X'
     ST_BN2_NAME = 'Updates'
-    ST_BN2_URL = 'https://t.me/TomenBots'
+    ST_BN2_URL = 'https://t.me/WZML_X'
     ST_MSG = '''<i>This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram or to ddl servers.</i>
 <b>Type {help_command} to get a list of available commands</b>'''
     ST_BOTPM = '''<i>Now, This bot will send all your files and links here. Start Using ...</i>'''
@@ -132,31 +132,30 @@ class WZMLStyle:
 ------------------------------------------\n\n"""
     
     # async def __msg_to_reply(self): ---> pyrogramEngine.py
-    PM_START =            "⇢ <b><u>Task Started :</u></b>\n┃\n↦ <b>Link:</b> <a href='{msg_link}'>Click Here</a>"
-    L_LOG_START =           "⇢ <b><u>Leech Started :</u></b>\n┃\n↦ <b>User :</b> {mention} ( #ID{uid} )\n↦ <b>Source :</b> <a href='{msg_link}'>Click Here</a>"
+    PM_START =            "<b><u>Task Started :</u></b>\n\n<b>Link:</b> <a href='{msg_link}'>Click Here</a>"
+    L_LOG_START =           "<b><u>Leech Started :</u></b>\n\n<b>User :</b> {mention} ( #ID{uid} )\n↦ <b>Source :</b> <a href='{msg_link}'>Click Here</a>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME =                  '<b><i>{Name}</i></b>\n┃\n'
-    SIZE =                  '↦ <b>Size: </b>{Size}\n'
-    ELAPSE =                '↦ <b>Elapsed: </b>{Time}\n'
-    MODE =                  '↦ <b>Mode: </b>{Mode}\n'
-    LINE =                  '−−−−−−−−≺@TomenBots≻\n'
+    NAME =                  '<b><i>{Name}</i></b>\n\n'
+    SIZE =                  '<b>Size: </b>{Size}\n'
+    ELAPSE =                '<b>Elapsed: </b>{Time}\n'
+    MODE =                  '<b>Mode: </b>{Mode}\n'
 
     # ----- LEECH -------
-    L_TOTAL_FILES =         '↦ <b>Total Files: </b>{Files}\n'
-    L_CORRUPTED_FILES =     '↦ <b>Corrupted Files: </b>{Corrupt}\n'
-    L_CC =                  '↦ <b>By: </b>{Tag}\n\n'
-    PM_BOT_MSG =            '⇢ <b><i>File(s) have been Sent above</i></b>'
-    L_BOT_MSG =             '⇢ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
-    L_LL_MSG =              '⇢ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
+    L_TOTAL_FILES =         '<b>Total Files: </b>{Files}\n'
+    L_CORRUPTED_FILES =     '<b>Corrupted Files: </b>{Corrupt}\n'
+    L_CC =                  '<b>By: </b>{Tag}\n\n'
+    PM_BOT_MSG =            '<b><i>File(s) have been Sent above</i></b>'
+    L_BOT_MSG =             '<b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
+    L_LL_MSG =              '<b><i>File(s) have been Sent. Access via Links...</i></b>\n'
     
     # ----- MIRROR -------
-    M_TYPE =                '↦ <b>Type: </b>{Mimetype}\n'
-    M_SUBFOLD =             '↦ <b>SubFolders: </b>{Folder}\n'
-    TOTAL_FILES =           '↦ <b>Files: </b>{Files}\n'
-    RCPATH =                '↦ <b>Path: </b><code>{RCpath}</code>\n'
-    M_CC =                  '↦ <b>By: </b>{Tag}\n\n'
-    M_BOT_MSG =             '⇢ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b>'
+    M_TYPE =                '<b>Type: </b>{Mimetype}\n'
+    M_SUBFOLD =             '<b>SubFolders: </b>{Folder}\n'
+    TOTAL_FILES =           '<b>Files: </b>{Files}\n'
+    RCPATH =                '<b>Path: </b><code>{RCpath}</code>\n'
+    M_CC =                  '<b>By: </b>{Tag}\n\n'
+    M_BOT_MSG =             '<b><i>Link(s) have been Sent to Bot PM (Private)</i></b>'
     # ----- BUTTONS -------
     CLOUD_LINK =      '☁️ Cloud Link'
     SAVE_MSG =        '📨 Save Message'
@@ -174,47 +173,47 @@ class WZMLStyle:
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    STATUS_NAME =       '<b><i>{Name}</i></b>'
+    STATUS_NAME =       '<code>{Name}</code>\n\n'
 
     #####---------PROGRESSIVE STATUS-------
-    BAR =               '\n⇢ {Bar}'
-    PROCESSED =         '\n↦ <b>Processed:</b> {Processed}'
-    STATUS =            '\n↦ <b>Status:</b> <a href="{Url}">{Status}</a>'
+    BAR =               '\n{Bar}'
+    PROCESSED =         '\n<b>Processed:</b> {Processed}'
+    STATUS =            '\n<b>Status:</b> <a href="{Url}">{Status}</a>'
     ETA =                                                ' | <b>ETA:</b> {Eta}'
-    SPEED =             '\n↦ <b>Speed:</b> {Speed}'
+    SPEED =             '\n<b>Speed:</b> {Speed}'
     ELAPSED =                                     ' | <b>Elapsed:</b> {Elapsed}'
-    ENGINE =            '\n↦ <b>Engine:</b> {Engine}'
-    STA_MODE =          '\n↦ <b>Mode:</b> {Mode}'
-    SEEDERS =           '\n↦ <b>Seeders:</b> {Seeders} | '
+    ENGINE =            '\n<b>Engine:</b> {Engine}'
+    STA_MODE =          '\n<b>Mode:</b> {Mode}'
+    SEEDERS =           '\n<b>Seeders:</b> {Seeders} | '
     LEECHERS =                                           '<b>Leechers:</b> {Leechers}'
 
     ####--------SEEDING----------
-    SEED_SIZE =      '\n↦ <b>Size: </b>{Size}'
-    SEED_SPEED =     '\n↦ <b>Speed: </b> {Speed} | '
+    SEED_SIZE =      '\n<b>Size: </b>{Size}'
+    SEED_SPEED =     '\n<b>Speed: </b> {Speed} | '
     UPLOADED =                                     '<b>Uploaded: </b> {Upload}'
-    RATIO =          '\n↦ <b>Ratio: </b> {Ratio} | '
+    RATIO =          '\n<b>Ratio: </b> {Ratio} | '
     TIME =                                         '<b>Time: </b> {Time}'
-    SEED_ENGINE =    '\n↦ <b>Engine:</b> {Engine}'
+    SEED_ENGINE =    '\n<b>Engine:</b> {Engine}'
 
     ####--------NON-PROGRESSIVE + NON SEEDING----------
-    STATUS_SIZE =    '\n↦ <b>Size: </b>{Size}'
-    NON_ENGINE =     '\n↦ <b>Engine:</b> {Engine}'
+    STATUS_SIZE =    '\n<b>Size: </b>{Size}'
+    NON_ENGINE =     '\n<b>Engine:</b> {Engine}'
 
     ####--------OVERALL MSG FOOTER----------
-    USER =              '\n↦ <b>User:</b> <code>{User}</code> | '
+    USER =              '\n<b>User:</b> <code>{User}</code> | '
     ID =                                                        '<b>ID:</b> <code>{Id}</code>'
-    BTSEL =          '\n↦ <b>Select:</b> {Btsel}'
-    CANCEL =         '\n↦ {Cancel}\n\n'
+    BTSEL =          '\n<b>Select:</b> {Btsel}'
+    CANCEL =         '\n{Cancel}\n\n'
 
     ####------FOOTER--------
-    FOOTER = '⌬ <b><i>Bot Stats</i></b>\n'
-    TASKS =  '↦ <b>Tasks:</b> {Tasks}\n'
-    BOT_TASKS = '↦ <b>Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n'
-    Cpu = '↦ <b>CPU:</b> {cpu}% | '
+    FOOTER = '<b><i>Bot Stats</i></b>\n'
+    TASKS =  '<b>Tasks:</b> {Tasks}\n'
+    BOT_TASKS = '<b>Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n'
+    Cpu = '<b>CPU:</b> {cpu}% | '
     FREE =                      '<b>F:</b> {free} [{free_p}%]'
-    Ram = '\n↦ <b>RAM:</b> {ram}% | '
+    Ram = '\n<b>RAM:</b> {ram}% | '
     uptime =                     '<b>UPTIME:</b> {uptime}'
-    DL = '\n↦ <b>DL:</b> {DL}/s | '
+    DL = '\n<b>DL:</b> {DL}/s | '
     UL =                        '<b>UL:</b> {UL}/s'
 
     ###--------BUTTONS-------
@@ -230,11 +229,11 @@ class WZMLStyle:
     # async def countNode(_, message): ----> gd_count.py
     COUNT_MSG = '<b>Counting:</b> <code>{LINK}</code>'
     COUNT_NAME = '<b><i>{COUNT_NAME}</i></b>\n↦\n'
-    COUNT_SIZE = '↦ <b>Size: </b>{COUNT_SIZE}\n'
-    COUNT_TYPE = '↦ <b>Type: </b>{COUNT_TYPE}\n'
-    COUNT_SUB =  '↦ <b>SubFolders: </b>{COUNT_SUB}\n'
-    COUNT_FILE = '↦ <b>Files: </b>{COUNT_FILE}\n'
-    COUNT_CC =   '↦ <b>By: </b>{COUNT_CC}\n'
+    COUNT_SIZE = '<b>Size: </b>{COUNT_SIZE}\n'
+    COUNT_TYPE = '<b>Type: </b>{COUNT_TYPE}\n'
+    COUNT_SUB =  '<b>SubFolders: </b>{COUNT_SUB}\n'
+    COUNT_FILE = '<b>Files: </b>{COUNT_FILE}\n'
+    COUNT_CC =   '<b>By: </b>{COUNT_CC}\n'
     # ---------------------
 
     # LIST ---> gd_list.py
@@ -246,54 +245,54 @@ class WZMLStyle:
     # async def mirror_status(_, message): ----> status.py
     NO_ACTIVE_DL = '''<i>No Active Downloads!</i>
     
-⌬ <b><i>Bot Stats</i></b>
-↦ <b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
-↦ <b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}
+<b><i>Bot Stats</i></b>
+<b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
+<b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}
     '''
     # ---------------------
 
     # USER Setting --> user_setting.py 
-    USER_SETTING = '''㊂ <b><u>User Settings :</u></b>
+    USER_SETTING = '''<b><u>User Settings :</u></b>
         
-↦<b> Name :</b> {NAME} ( <code>{ID}</code> )
-↦<b> Username :</b> {USERNAME}
-↦<b> Telegram DC :</b> {DC}
-↦<b> Language :</b> {LANG}
+<b> Name :</b> {NAME} ( <code>{ID}</code> )
+<b> Username :</b> {USERNAME}
+<b> Telegram DC :</b> {DC}
+<b> Language :</b> {LANG}
 
-⇢ <u><b>Available Args:</b></u>
-⇢ <b>-s</b> or <b>-set</b>: Set Directly via Arg'''
+<u><b>Available Args:</b></u>
+<b>-s</b> or <b>-set</b>: Set Directly via Arg'''
 
-    UNIVERSAL = '''㊂ <b><u>Universal Settings : {NAME}</u></b>
+    UNIVERSAL = '''<b><u>Universal Settings : {NAME}</u></b>
 
-↦<b> YT-DLP Options :</b> <b><code>{YT}</code></b>
-↦<b> Daily Tasks :</b> <code>{DT}</code> per day
-↦<b> Last Bot Used :</b> <code>{LAST_USED}</code>
-↦<b> User Session :</b> <code>{USESS}</code>
-↦<b> MediaInfo Mode :</b> <code>{MEDIAINFO}</code>
-↦<b> Save Mode :</b> <code>{SAVE_MODE}</code>
-↦<b> User Bot PM :</b> <code>{BOT_PM}</code>'''
+<b> YT-DLP Options :</b> <b><code>{YT}</code></b>
+<b> Daily Tasks :</b> <code>{DT}</code> per day
+<b> Last Bot Used :</b> <code>{LAST_USED}</code>
+<b> User Session :</b> <code>{USESS}</code>
+<b> MediaInfo Mode :</b> <code>{MEDIAINFO}</code>
+<b> Save Mode :</b> <code>{SAVE_MODE}</code>
+<b> User Bot PM :</b> <code>{BOT_PM}</code>'''
 
-    MIRROR = '''㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
+    MIRROR = '''<b><u>Mirror/Clone Settings : {NAME}</u></b>
 
-↦<b> RClone Config :</b> <i>{RCLONE}</i>
-↦<b> Mirror Prefix :</b> <code>{MPREFIX}</code>
-↦<b> Mirror Suffix :</b> <code>{MSUFFIX}</code>
-↦<b> Mirror Remname :</b> <code>{MREMNAME}</code>
-↦<b> DDL Server(s) :</b> <i>{DDL_SERVER}</i>
-↦<b> User TD Mode :</b> <i>{TMODE}</i>
-↦<b> Total User TD(s) :</b> <i>{USERTD}</i>
-↦<b> Daily Mirror :</b> <code>{DM}</code> per day'''
+<b> RClone Config :</b> <i>{RCLONE}</i>
+<b> Mirror Prefix :</b> <code>{MPREFIX}</code>
+<b> Mirror Suffix :</b> <code>{MSUFFIX}</code>
+<b> Mirror Remname :</b> <code>{MREMNAME}</code>
+<b> DDL Server(s) :</b> <i>{DDL_SERVER}</i>
+<b> User TD Mode :</b> <i>{TMODE}</i>
+<b> Total User TD(s) :</b> <i>{USERTD}</i>
+<b> Daily Mirror :</b> <code>{DM}</code> per day'''
 
-    LEECH = '''㊂ <b><u>Leech Settings for {NAME}</u></b>
+    LEECH = '''<b><u>Leech Settings for {NAME}</u></b>
 
-↦<b> Daily Leech : </b><code>{DL}</code> per day
-↦<b> Leech Type :</b> <i>{LTYPE}</i>
-↦<b> Custom Thumbnail :</b> <i>{THUMB}</i>
-↦<b> Leech Split Size :</b> <code>{SPLIT_SIZE}</code>
-↦<b> Equal Splits :</b> <i>{EQUAL_SPLIT}</i>
-↦<b> Media Group :</b> <i>{MEDIA_GROUP}</i>
-↦<b> Leech Caption :</b> <code>{LCAPTION}</code>
-↦<b> Leech Prefix :</b> <code>{LPREFIX}</code>
-↦<b> Leech Suffix :</b> <code>{LSUFFIX}</code>
-↦<b> Leech Dumps :</b> <code>{LDUMP}</code>
-↦<b> Leech Remname :</b> <code>{LREMNAME}</code>'''
+<b> Daily Leech : </b><code>{DL}</code> per day
+<b> Leech Type :</b> <i>{LTYPE}</i>
+<b> Custom Thumbnail :</b> <i>{THUMB}</i>
+<b> Leech Split Size :</b> <code>{SPLIT_SIZE}</code>
+<b> Equal Splits :</b> <i>{EQUAL_SPLIT}</i>
+<b> Media Group :</b> <i>{MEDIA_GROUP}</i>
+<b> Leech Caption :</b> <code>{LCAPTION}</code>
+<b> Leech Prefix :</b> <code>{LPREFIX}</code>
+<b> Leech Suffix :</b> <code>{LSUFFIX}</code>
+<b> Leech Dumps :</b> <code>{LDUMP}</code>
+<b> Leech Remname :</b> <code>{LREMNAME}</code>'''
