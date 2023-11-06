@@ -44,17 +44,17 @@ PAGE_NO      = 1
 
 
 class MirrorStatus:
-    STATUS_UPLOADING   = "Upload"
-    STATUS_DOWNLOADING = "Download"
-    STATUS_CLONING     = "Clone"
-    STATUS_QUEUEDL     = "QueueDL"
-    STATUS_QUEUEUP     = "QueueUp"
-    STATUS_PAUSED      = "Pause"
-    STATUS_ARCHIVING   = "Archive"
-    STATUS_EXTRACTING  = "Extract"
-    STATUS_SPLITTING   = "Split"
-    STATUS_CHECKING    = "CheckUp"
-    STATUS_SEEDING     = "Seed"
+    STATUS_UPLOADING   = "ᴜᴘʟᴏᴀᴅ"
+    STATUS_DOWNLOADING = "ᴅᴏᴡɴʟᴏᴀᴅ"
+    STATUS_CLONING     = "ᴄʟᴏɴᴇ"
+    STATUS_QUEUEDL     = "ǫᴜᴇᴜᴇᴅʟ"
+    STATUS_QUEUEUP     = "ǫᴜᴇᴜᴇᴜᴘ"
+    STATUS_PAUSED      = "ᴘᴀsᴜᴇ"
+    STATUS_ARCHIVING   = "ᴀʀᴄʜɪᴠᴇ"
+    STATUS_EXTRACTING  = "ᴇᴄᴛʀᴀᴄᴛ"
+    STATUS_SPLITTING   = "sᴘʟɪᴛ"
+    STATUS_CHECKING    = "ᴄʜᴇᴄᴋᴜᴘ"
+    STATUS_SEEDING     = "sᴇᴇᴅ"
 
 
 class setInterval:
@@ -141,10 +141,10 @@ def get_progress_bar_string(pct):
     p = min(max(pct, 0), 100)
     cFull = int(p // 8)
     cPart = int(p % 8 - 1)
-    p_str = '■' * cFull
+    p_str = '●' * cFull
     if cPart >= 0:
-        p_str += ['▤', '▥', '▦', '▧', '▨', '▩', '■'][cPart]
-    p_str += '□' * (12 - cFull)
+        p_str += ['◖', '◗', '◐', '◑', '◒', '◓', '●'][cPart]
+    p_str += '○' * (12 - cFull)
     return f"[{p_str}]"
 
 
@@ -493,23 +493,23 @@ async def compare_versions(v1, v2):
     for i in range(3):
         v1_part, v2_part = v1_parts[i], v2_parts[i]
         if v1_part < v2_part:
-            return "New Version Update is Available! Check Now!"
+            return "<b>ɴᴇᴡ ᴠᴇʀꜱɪᴏɴ ᴜᴘᴅᴀᴛᴇ ɪꜱ ᴀᴠᴀɪʟᴀʙʟᴇ ! ᴄʜᴇᴄᴋ ɴᴏᴡ !</b>"
         elif v1_part > v2_part:
-            return "More Updated! Kindly Contribute in Official"
-    return "Already up to date with latest version"
+            return "<b>ᴍᴏʀᴇ ᴜᴘᴅᴀᴛᴇᴅ ! ᴋɪɴᴅʟʏ ᴄᴏɴᴛʀɪʙᴜᴛᴇ ɪɴ ᴏғғɪᴄɪᴀʟ</b>"
+    return "<b>ᴀʟʀᴇᴀᴅʏ ᴜᴘ ᴛᴏ ᴅᴀᴛᴇ ᴡɪᴛʜ ʟᴀᴛᴇꜱᴛ ᴠᴇʀꜱɪᴏɴ ❗</b>"
 
 
 async def get_stats(event, key="home"):
     user_id = event.from_user.id
     btns = ButtonMaker()
-    btns.ibutton('Back', f'wzmlx {user_id} stats home')
+    btns.ibutton('⇋ ʙᴀᴄᴋ', f'wzmlx {user_id} stats home')
     if key == "home":
         btns = ButtonMaker()
-        btns.ibutton('Bot Stats', f'wzmlx {user_id} stats stbot')
-        btns.ibutton('OS Stats', f'wzmlx {user_id} stats stsys')
-        btns.ibutton('Repo Stats', f'wzmlx {user_id} stats strepo')
-        btns.ibutton('Bot Limits', f'wzmlx {user_id} stats botlimits')
-        msg = "⌬ <b><i>Bot & OS Statistics!</i></b>"
+        btns.ibutton('ʙᴏᴛ sᴛᴀᴛs, f'wzmlx {user_id} stats stbot')
+        btns.ibutton('ᴏs sᴛᴀᴛs', f'wzmlx {user_id} stats stsys')
+        btns.ibutton('ʀᴇᴘᴏ sᴛᴀᴛs', f'wzmlx {user_id} stats strepo')
+        btns.ibutton('ʙᴏᴛ ʟɪᴍɪᴛs', f'wzmlx {user_id} stats botlimits')
+        msg = "<b>ʜɪ ✨\n\nʙᴏᴛ & ᴏs sᴛᴀᴛs\n\n~ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ›› <a href='https://t.me/Hari_OP'>ʜᴀʀɪ ᠰ ᴛɢ​</a></b>"
     elif key == "stbot":
         total, used, free, disk = disk_usage('/')
         swap = swap_memory()
