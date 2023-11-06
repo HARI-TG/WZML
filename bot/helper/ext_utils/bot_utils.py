@@ -248,7 +248,6 @@ def get_readable_message():
         if (download.eng()).startswith("qBit"):
             msg += BotTheme('BTSEL', Btsel=f"/{BotCommands.BtSelectCommand}_{download.gid()}")
         msg += BotTheme('CANCEL', Cancel=f"/{BotCommands.CancelMirror}_{download.gid()}")
-        msg += BotTheme('LINE')
 
     if len(msg) == 0:
         return None, None
